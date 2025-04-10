@@ -5,7 +5,7 @@ from user.views import CreateUserView, CreateTokenView, ManageUserView
 app_name = "user"
 
 urlpatterns = [
-    path("register/", CreateUserView.as_view(), name="register"),
-    path("login/", CreateTokenView.as_view(), name="create_token"),
-    path("me/", ManageUserView.as_view(), name="manage_user"),
+    path("register/", CreateUserView.as_view(), name="create"),
+    path("login/", CreateTokenView.as_view(), name="login"),
+    path("me/", ManageUserView.as_view(), name="manage"),
 ]
